@@ -1,0 +1,111 @@
+/* font family */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;/
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(238, 227, 207);
+}
+
+.profile-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 370px;
+    width: 100%;
+    background: #fff;
+    border-radius: 24px;
+    padding: 1rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
+    position: relative;
+}
+.profile-card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 36%;
+    width: 100%;
+    border-radius: 24px 24px 0 0 ;
+    background-color: #0f286b;
+}
+
+.image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;  
+    background-color: #0f286b; 
+    padding: 3px;
+    margin-bottom: 10px;
+}
+.image .profile-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid whitesmoke;
+}
+
+.profile-card .text-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+}
+
+.text-data .name{
+    font-size: 25px;
+    font-weight: 900;
+    color: #0c1e51;
+}
+.text-data .job{
+    font-size: 15px;
+    color: #0f286b;
+    font-weight: 500;
+}
+
+.profile-card .media-buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.media-buttons .link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+    font-size: 24px;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    margin: 0 8px;
+    background-color: #4070f4;
+    text-decoration: none;
+}
+#instagram{
+    background: 
+    radial-gradient(circle at 30% 100%, 
+      #fad0c4 0%, 
+      #fad0c4 14%, 
+      #f3a2a2 24%, 
+      #f75a5a 34%, 
+      #f94585 45%, 
+      #d62976 55%, 
+      #8134af 65%, 
+      #405de6 75%, 
+      #405de6 100%
+    ),
+    linear-gradient(0deg, #405de6 0%, #5851db 100%),
+    linear-gradient(45deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%);
+}
