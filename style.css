@@ -1,14 +1,14 @@
-/* Font Family */
+/* font family */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;/
 }
 
-body {
+body{
     height: 100vh;
     display: flex;
     align-items: center;
@@ -16,7 +16,7 @@ body {
     background-color: rgb(238, 227, 207);
 }
 
-.profile-card {
+.profile-card{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,37 +27,28 @@ body {
     padding: 1rem;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
     position: relative;
-    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
-
-/* Subtle Hover Effect */
-.profile-card:hover {
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    transform: translateY(-5px);
-}
-
-.profile-card::before {
+.profile-card::before{
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     height: 36%;
     width: 100%;
-    border-radius: 24px 24px 0 0;
+    border-radius: 24px 24px 0 0 ;
     background-color: #0f286b;
 }
 
-.image {
+.image{
     position: relative;
     height: 150px;
     width: 150px;
-    border-radius: 50%;
-    background-color: #0f286b;
+    border-radius: 50%;  
+    background-color: #0f286b; 
     padding: 3px;
     margin-bottom: 10px;
 }
-
-.image .profile-img {
+.image .profile-img{
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -65,33 +56,31 @@ body {
     border: 3px solid whitesmoke;
 }
 
-.profile-card .text-data {
+.profile-card .text-data{
     display: flex;
     flex-direction: column;
     align-items: center;
     color: black;
 }
 
-.text-data .name {
+.text-data .name{
     font-size: 25px;
     font-weight: 900;
     color: #0c1e51;
 }
-
-.text-data .job {
+.text-data .job{
     font-size: 15px;
     color: #0f286b;
     font-weight: 500;
 }
 
-.profile-card .media-buttons {
+.profile-card .media-buttons{
     display: flex;
     align-items: center;
     margin-top: 15px;
 }
 
-/* Interactive Hover Effects for Social Links */
-.media-buttons .link {
+.media-buttons .link{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -103,26 +92,24 @@ body {
     margin: 0 8px;
     background-color: #4070f4;
     text-decoration: none;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.media-buttons .link:hover{
+    font-size: 30px;
 }
 
-.media-buttons .link:hover {
-    transform: scale(1.1);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-#instagram {
-    background:
-        radial-gradient(circle at 30% 100%,
-            #fad0c4 0%,
-            #fad0c4 14%,
-            #f3a2a2 24%,
-            #f75a5a 34%,
-            #f94585 45%,
-            #d62976 55%,
-            #8134af 65%,
-            #405de6 75%,
-            #405de6 100%),
-        linear-gradient(0deg, #405de6 0%, #5851db 100%),
-        linear-gradient(45deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%);
+#instagram{
+    background: 
+    radial-gradient(circle at 30% 100%, 
+      #fad0c4 0%, 
+      #fad0c4 14%, 
+      #f3a2a2 24%, 
+      #f75a5a 34%, 
+      #f94585 45%, 
+      #d62976 55%, 
+      #8134af 65%, 
+      #405de6 75%, 
+      #405de6 100%
+    ),
+    linear-gradient(0deg, #405de6 0%, #5851db 100%),
+    linear-gradient(45deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%);
 }
